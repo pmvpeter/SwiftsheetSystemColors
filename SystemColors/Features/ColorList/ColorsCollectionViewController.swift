@@ -118,9 +118,6 @@ extension ColorsCollectionViewController: UICollectionViewDelegateFlowLayout {
         sectionInsets.left
     }
 
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("scrollView.contentOffset: \(scrollView.contentOffset)")
-    }
 }
 
 // MARK: - UITableViewDataSource
