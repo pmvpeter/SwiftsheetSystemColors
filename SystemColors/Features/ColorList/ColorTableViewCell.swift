@@ -10,12 +10,15 @@ import UIKit
 
 class ColorTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
 
     @IBOutlet weak var colorContainerView: UIView!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var colorIdentifierLabel: UILabel!
     @IBOutlet weak var hexValueLabel: UILabel!
     @IBOutlet weak var rgbValueLabel: UILabel!
+
+    // MARK: - UITableViewCell methods
 
     override func awakeFromNib() {
         super.awakeFromNib()

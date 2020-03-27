@@ -82,6 +82,7 @@ class ColorsCollectionViewController: UIViewController {
 // MARK: - UICollectionViewDataSource
 
 extension ColorsCollectionViewController: UICollectionViewDataSource {
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.numberOfItems
     }
@@ -94,11 +95,13 @@ extension ColorsCollectionViewController: UICollectionViewDataSource {
 
         return cell
     }
+
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
 extension ColorsCollectionViewController: UICollectionViewDelegateFlowLayout {
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let marginSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = collectionView.bounds.width - marginSpace
@@ -123,10 +126,12 @@ extension ColorsCollectionViewController: UICollectionViewDelegateFlowLayout {
 // MARK: - UITableViewDataSource
 
 extension ColorsCollectionViewController: UICollectionViewDelegate {
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
 
         let color = viewModel.item(at: indexPath)
         coordinator.didSelectColor(systemColor: color)
     }
+    
 }

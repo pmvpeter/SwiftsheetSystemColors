@@ -10,10 +10,14 @@ import UIKit
 
 class ColorCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlets
+
     @IBOutlet weak var colorContainerView: UIView!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var colorIdentifierLabel: UILabel!
 
+    // MARK: - UICollectionViewCell methods
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -23,7 +27,6 @@ class ColorCollectionViewCell: UICollectionViewCell {
 
         colorView.layer.cornerRadius = 3
     }
-
 
     func configure(for systemColor: SystemColor) {
         colorView.backgroundColor = systemColor.uiColor

@@ -99,13 +99,16 @@ class ColorListViewController: UIViewController {
         colorsContainerViewController.view.leftAnchor.constraint(equalTo: safeArea.leftAnchor).isActive = true
         colorsContainerViewController.didMove(toParent: self)
     }
+
 }
 
 // MARK: - Private methods
 
 extension ColorListViewController: UISearchResultsUpdating {
+
     func updateSearchResults(for searchController: UISearchController) {
         guard let query = searchController.searchBar.text else { return }
         viewModel.filter(using: query)
     }
+    
 }

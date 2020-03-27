@@ -27,4 +27,5 @@ class ColorDetailViewModel {
     init(systemColor: SystemColor) {
         self.systemColor = systemColor
     }
+    
 }

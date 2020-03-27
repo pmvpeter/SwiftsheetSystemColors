@@ -32,4 +32,5 @@ class ColorListCoordinator {
         let colorDetailViewController = ColorDetailViewController(viewModel: colorDetailViewModel)
         navigationController.pushViewController(colorDetailViewController, animated: true)
     }
+    
 }

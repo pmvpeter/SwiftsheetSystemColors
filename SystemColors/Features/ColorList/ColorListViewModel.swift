@@ -48,4 +48,5 @@ class ColorListViewModel {
 
         notificationCenter.post(name: Constant.NotificationName.colorsUpdated, object: nil)
     }
+    
 }

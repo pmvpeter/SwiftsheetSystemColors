@@ -46,12 +46,6 @@ class ColorView: UIView {
         colorView.heightAnchor.constraint(equalTo: colorView.widthAnchor).isActive = true
         colorView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         colorView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        setNeedsLayout()
-
-//        colorView.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
-//        colorView.rightAnchor.constraint(equalTo: rightAnchor, constant: -5).isActive = true
-//        colorView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true
-//        colorView.leftAnchor.constraint(equalTo: leftAnchor, constant: 5).isActive = true
     }
 
     // MARK: - Methods
@@ -59,4 +53,5 @@ class ColorView: UIView {
     func configure(for color: UIColor) {
         colorView.backgroundColor = color
     }
+    
 }

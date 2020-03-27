@@ -79,11 +79,13 @@ class ColorsTableViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
+
 }
 
 // MARK: - UITableViewDataSource
 
 extension ColorsTableViewController: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numberOfItems
     }
@@ -98,15 +100,18 @@ extension ColorsTableViewController: UITableViewDataSource {
 
         return cell
     }
+
 }
 
 // MARK: - UITableViewDataSource
 
 extension ColorsTableViewController: UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
         let color = viewModel.item(at: indexPath)
         coordinator.didSelectColor(systemColor: color)
     }
+    
 }

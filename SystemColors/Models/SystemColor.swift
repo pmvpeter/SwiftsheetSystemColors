@@ -47,8 +47,6 @@ enum SystemColor: CaseIterable {
     case darkText
     case groupTableViewBackground
 
-
-
     var uiColor: UIColor {
         switch self {
         case .systemRed:
@@ -125,6 +123,7 @@ enum SystemColor: CaseIterable {
             return .groupTableViewBackground
         }
     }
+    
 }
 
 

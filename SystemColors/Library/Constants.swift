@@ -11,9 +11,7 @@ import Foundation
 struct Constant {
 
     struct NotificationName {
-
         static let colorsUpdated = Notification.Name("ColorList.colorsUpdated")
-
     }
 
 }
